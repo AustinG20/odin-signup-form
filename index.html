@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="background-left">
+            <img src="pictures/halie-west-25xggax4bSA-unsplash.jpg">
+            <div class="logo">
+                <img src="pictures/odin-lined.png"> 
+                <p>ODIN</p>
+            </div>
+        </div>
+        <div class="form-side">
+            <div class="para">
+                <P>
+                    This is not a real online service! You know you need something like this in your like to help you realize your deepest dreams.
+                    <br>Sign up now to get started.
+                </P>
+                <p>
+                    You know you want to.
+                </p>
+            </div>
+            <form class="form">
+                <p id="legend">Let's do this!</p>
+                <div>
+                    <section class="row">
+                        <p class="item">
+                            <label for="fName">
+                                <span>FIRST NAME </span>
+                            </label>
+                            <input type="text" id="fName" name="fName"/>
+                        </p>
+                        <p class="item">
+                            <label for="lName">
+                                <span>LAST NAME </span>
+                            </label>
+                            <input type="text" id="lName" name="lName"/>
+                        </p>
+                    </section>
+                    <section class="row">
+                        <p class="item">
+                            <label for="email">
+                                <span>EMAIL </span>
+                            </label>
+                            <input type="email" id="email" name="email"/>
+                        </p>
+                        <p class="item">
+                            <label for="phone">
+                                <span>PHONE NUMBER </span>
+                            </label>
+                            <input type="tel" id="phone" name="phone"/>
+                        </p>
+                    </section>
+                    <section class="row">
+                        <p class="item">
+                            <label for="password">
+                                <span>PASSWORD </span>
+                            </label>
+                            <input type="password" id="password" name="password" 
+                            pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            required/>
+                        </p>
+                        <p class="item">
+                            <label for="cPassword">
+                                <span>CONFIRM PASSWORD </span>
+                            </label>
+                            <input type="password" id="cPassword" name="cPassword" 
+                            pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            required/>
+                        </p>
+                    </section>
+                </div>
+                <div class="bottomRow">
+                    <section>
+                        <button type="submit" class="submitButton">Create Account</button>
+                    </section>
+                    <section>
+                        <span class="member">Already have an account?<a>Log in</a></span>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
